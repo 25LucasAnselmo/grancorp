@@ -1,0 +1,11 @@
+/*
+Theme Name: Default Theme
+Theme URI: http://underscores.me/
+Author: Trezentos
+Author URI: http://trezentos.com.br
+Description: A default theme for WordPress.
+Version: 1.0.0
+*/
+
+/* Main Import */
+@import url('./dist/style.css');

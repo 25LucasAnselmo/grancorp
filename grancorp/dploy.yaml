@@ -1,0 +1,25 @@
+### Testing Environment
+dev:
+    scheme: ftp
+    host: ftp.trezentos.com.br
+    port: 21
+    user: trezento
+    pass: 74u-Hda-XA5-JNF
+    check: true
+    exclude: [".gitignore", "dploy.yaml", "package.json", "node_modules/**", ".git", ".htaccess", "gulpfile.js", "less/**", "README.md"]
+    path:
+        local: /
+        remote: /public_html/preview/frontend/grancorp
+
+### Live Environment
+# live:
+#     scheme: ftp
+#     host: 
+#     port: 21
+#     user: 
+#     pass: 
+#     check: true
+#     exclude: [".gitignore", "dploy.yaml", "package.json", "node_modules/**", ".git", ".htaccess", "gulpfile.js", "less/**", "README.md"]
+#     path:
+#         local: /
+#         remote: /
