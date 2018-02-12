@@ -13,7 +13,7 @@
 						<hgroup>
 							<h2 class="wow animate fadeIn"><?= $item['home-slider-conteudo-headline']; ?></h2>
 							<span class="wow animate fadeIn"><?= $item['home-slider-conteudo-subtitulo']; ?></span>
-							<a href="<?= $item['home-slider-conteudo-link_button']; ?>" class="wow animate fadeIn"><?= $item['home-slider-conteudo-text_button']; ?></a>
+							<a href="<?= $item['home-slider-conteudo-link_button']; ?>" class="wow animate fadeIn" title="<?php _e('Conteúdo', 'grancorp'); ?>"><?= $item['home-slider-conteudo-text_button']; ?></a>
 						</hgroup>
 					</div>
 				</div>
@@ -26,8 +26,8 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="slick-arrows">
-							<button class="slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/images/prev.png"></button>
-							<button class="slick-next"><img src="<?php echo get_template_directory_uri(); ?>/images/next.png"></button>
+							<button class="slick-prev"><img src="<?php echo get_template_directory_uri(); ?>/images/prev.png" alt="<?php _e('Anterior'. 'grancorp'); ?>"></button>
+							<button class="slick-next"><img src="<?php echo get_template_directory_uri(); ?>/images/next.png" alt="<?php _e('Próximo'. 'grancorp'); ?>"></button>
 						</div>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 		</div>
 		
 		<div class="mouse hvr-bob">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/img-mouse.png" alt="mouse">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/img-mouse.png" alt="<?php _e('Mouse'. 'grancorp'); ?>">
 		</div>
 	</div>
 </section>

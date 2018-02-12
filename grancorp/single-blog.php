@@ -33,7 +33,7 @@
 								<h2><?php the_title(); ?></h2>
 								
 								<div class="img">
-									<img src="<?php the_field('blog-imagem_destacada'); ?>">
+									<img src="<?php the_field('blog-imagem_destacada'); ?>" alt="<?php echo get_the_title(); ?>">
 								</div>
 								
 								<span class="content">

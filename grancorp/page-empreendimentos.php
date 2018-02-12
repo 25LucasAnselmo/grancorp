@@ -90,7 +90,7 @@
 												<?php if ($campos['venda-vendido']) { ?>
 							                      <span class="vendido">100% vendido</span>
 							                    <?php } else ?>
-												<a href="<?php the_permalink(); ?>" class="full"></a>
+												<a href="<?php the_permalink(); ?>" class="full" title="<?php echo get_the_title(); ?>"></a>
 												<div class="overlay <?= 'clr-' . $campos['empreendimentos-interna-tamanho-cor']; ?>"></div>
 												<hgroup>
 							                      <div class="status"><?= $campos['empreendimentos-interna-tamanho-status']['label']; ?></div>
@@ -101,7 +101,7 @@
 												<div class="hover">
 													<h3><?php the_field('empreendimentos-interna-tamanho-descricao'); ?></h3>
 													<hr>
-													<a class="saiba" href="<?php the_permalink(); ?>"><?php the_field('empreendimentos-interna-tamanho-texto_botao'); ?> <i class="fa fa-angle-right"></i></a>
+													<a class="saiba" href="<?php the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php the_field('empreendimentos-interna-tamanho-texto_botao'); ?> <i class="fa fa-angle-right"></i></a>
 												</div>
 											</div>
 										</div>
@@ -113,14 +113,14 @@
 												<?php if ($campos['venda-vendido']) { ?>
 							                      <span class="vendido">100% vendido</span>
 							                    <?php } else ?>
-												<a href="<?php the_permalink(); ?>" class="full"></a>
+												<a href="<?php the_permalink(); ?>" class="full" title="<?php echo get_the_title(); ?>"></a>
 												<div class="overlay clr-visible <?= 'clr-' . $campos['empreendimentos-interna-tamanho-cor']; ?>"></div>
 												<hgroup>
 							                      <div class="status"><?= $campos['empreendimentos-interna-tamanho-status']['label']; ?></div>
 							                      <h2><?php the_field('empreendimentos-interna-tamanho-titulo'); ?></h2>
 							                      <span><?php the_field('empreendimentos-interna-tamanho-bairro'); ?></span>
 							                      <div class="hover">
-							                        <a class="saiba" href="<?php the_permalink(); ?>"><?php the_field('empreendimentos-interna-tamanho-texto_botao'); ?> <i class="fa fa-angle-right"></i></a>
+							                        <a class="saiba" href="<?php the_permalink(); ?>" title="<?php echo get_the_title(); ?>"><?php the_field('empreendimentos-interna-tamanho-texto_botao'); ?> <i class="fa fa-angle-right"></i></a>
 							                      </div>
 							                    </hgroup>
 											</div>

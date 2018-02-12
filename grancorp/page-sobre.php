@@ -64,7 +64,7 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="img wow animated fadeInUp">
-							<img src="<?= $campos['sobre-qualidade-imagem']; ?>">
+							<img src="<?= $campos['sobre-qualidade-imagem']; ?>" alt="<?php _e('Qualidades'. 'grancorp'); ?>">
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -74,7 +74,7 @@
 								<!-- MIOLO -->
 
 									<li class="wow animated fadeInUp">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/icn-lista.png">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/icn-lista.png" alt="<?php _e('Qualidade'. 'grancorp'); ?>">
 										<span class="texto"><?= $item['sobre-qualidade-texto']; ?></span>
 									</li>
 
@@ -104,13 +104,13 @@
 							<div class="col-md-10 col-md-offset-1">
 								<span class="content wow animated fadeInUp"><?= $campos['sobre-quote-conteudo']; ?></span>
 								<div class="botao wow animated fadeInUp">
-									<a href="<?= $campos['sobre-quote-link_botão']; ?>"><?= $campos['sobre-quote-texto_botao']; ?></a>
+									<a href="<?= $campos['sobre-quote-link_botão']; ?>" title="<?php _e('Vídeo', 'grancorp'); ?>"><?= $campos['sobre-quote-texto_botao']; ?></a>
 								</div>
 							</div>
 
 							<div class="popuptext" id="myPopup">
 								<div class="wrapper">
-									<a href="JavaScript:void(0);" class="close_popup">X Fechar</a>
+									<a href="JavaScript:void(0);" class="close_popup" title="<?php _e('Fechar', 'grancorp'); ?>">X Fechar</a>
 									<div class="video-wrapper">
 										<iframe width="100%" height="100%" src="<?= $campos['sobre-quote-link_video']; ?>?rel=0&amp;showinfo=0?rel=0&amp;showinfo=0;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 									</div>

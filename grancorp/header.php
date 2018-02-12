@@ -44,8 +44,8 @@
 
 							<div class="left">
 								<div class="logo">
-									<a href="<?php echo home_url(); ?>">
-										<img src="<?= $fields['opcoes-menu-logo']; ?>">
+									<a href="<?php echo home_url(); ?>" title="<?php _e('Página inicial', 'grancorp'); ?>">
+										<img src="<?= $fields['opcoes-menu-logo']; ?>" alt="<?php _e('Grancorp'. 'grancorp'); ?>">
 										<h1 class="hide">GranCorp</h1>
 									</a>
 								</div>
@@ -56,16 +56,16 @@
 									<ul>
 										<?php foreach ($fields['opcoes-menu-conteudo'] as $item): ?>
 	
-											<li><a href="<?= $item['opcoes-menu-link']; ?>"><?= $item['opcoes-menu-titulo']; ?></a></li>
+											<li><a href="<?= $item['opcoes-menu-link']; ?>" title="<?php _e('Opção de conteúdo', 'grancorp'); ?>"><?= $item['opcoes-menu-titulo']; ?></a></li>
 
 										<?php endforeach; ?>
 									</ul>
 								</nav>
-								<button><img src="<?php echo get_template_directory_uri(); ?>/images/icn-telefone.png"><span><?= $fields['opcoes-menu-vendas']; ?></span></button>
+								<button><img src="<?php echo get_template_directory_uri(); ?>/images/icn-telefone.png" alt="<?php _e('Telefone'. 'grancorp'); ?>"><span><?= $fields['opcoes-menu-vendas']; ?></span></button>
 							</div>
 
 							<div class="mobile-navigation-toggler">
-								<a href="JavaScript:void(0);"><i class="fa fa-bars"></i>
+								<a href="JavaScript:void(0);" title="<?php _e('Alternar menu', 'grancorp'); ?>"><i class="fa fa-bars"></i>
 							</a>
 
 							<div class="mobile-navigation">	
@@ -73,11 +73,11 @@
 									<ul class="s3-nav">
 										<?php foreach ($fields['opcoes-menu-conteudo'] as $item): ?>
 	
-											<li><a href="<?= $item['opcoes-menu-link']; ?>"><?= $item['opcoes-menu-titulo']; ?></a></li>
+											<li><a href="<?= $item['opcoes-menu-link']; ?>" title="<?php _e('Opção de conteúdo', 'grancorp'); ?>"><?= $item['opcoes-menu-titulo']; ?></a></li>
 
 										<?php endforeach; ?>
 									</ul>
-									<button><img src="<?php echo get_template_directory_uri(); ?>/images/icn-telefone.png"><span><?= $fields['opcoes-menu-vendas']; ?></span></button>
+									<button><img src="<?php echo get_template_directory_uri(); ?>/images/icn-telefone.png" alt="<?php _e('Telefone'. 'grancorp'); ?>"><span><?= $fields['opcoes-menu-vendas']; ?></span></button>
 								</div>
 							</div>
 

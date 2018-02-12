@@ -11,19 +11,19 @@
 					<!-- 1 linha rodape -->
 
 						<div class="logo wow animate fadeInUp">
-							<a href="<?php echo home_url(); ?>">
-								<img src="<?= $fields['opcoes-rodape-logo']; ?>">
+							<a href="<?php echo home_url(); ?>" title="<?php _e('Página inicial', 'grancorp'); ?>">
+								<img src="<?= $fields['opcoes-rodape-logo']; ?>" alt="<?php _e('Grancorp'. 'grancorp'); ?>">
 							</a>
 						</div>
 						<ul class="social wow animate fadeInUp">
 							<?php if ($fields['opcoes-rodape-facebook']) { ?>
-								<li><a href="<?= $fields['opcoes-rodape-facebook']; ?>" target="_blank" class="facebook-share"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="<?= $fields['opcoes-rodape-facebook']; ?>" target="_blank" class="facebook-share" title="<?php _e('Facebook', 'grancorp'); ?>"><i class="fa fa-facebook"></i></a></li>
 							<?php } else {} ?>
 							<?php if ($fields['opcoes-rodape-twitter']) { ?>
-								<li><a href="<?= $fields['opcoes-rodape-twitter']; ?>" target="_blank" class="twitter-share"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="<?= $fields['opcoes-rodape-twitter']; ?>" target="_blank" class="twitter-share" title="<?php _e('Twitter', 'grancorp'); ?>"><i class="fa fa-twitter"></i></a></li>
 							<?php } else {} ?>
 							<?php if ($fields['opcoes-rodape-linkedin']) { ?>
-								<li><a href="<?= $fields['opcoes-rodape-linkedin']; ?>" target="_blank" class="linkedin-share"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="<?= $fields['opcoes-rodape-linkedin']; ?>" target="_blank" class="linkedin-share" title="<?php _e('Linkedin', 'grancorp'); ?>"><i class="fa fa-linkedin"></i></a></li>
 							<?php } else {} ?>
 						</ul>
 
@@ -48,7 +48,7 @@
 									<?php if ($fields['opcoes-rodape-coluna-dois']) { ?>
 										<?php foreach ($fields['opcoes-rodape-coluna-dois'] as $item): ?>
 											
-											<li><a href="<?= $item['opcoes-rodape-coluna-dois-link']; ?>"><strong><strong><?= $item['opcoes-rodape-coluna-dois-texto']; ?></strong></a></li>
+											<li><a href="<?= $item['opcoes-rodape-coluna-dois-link']; ?>" title="<?php _e('Opção texto', 'grancorp'); ?>"><strong><strong><?= $item['opcoes-rodape-coluna-dois-texto']; ?></strong></a></li>
 
 										<?php endforeach; ?>
 									<?php } else{} ?>
@@ -59,7 +59,7 @@
 									<?php if ($fields['opcoes-rodape-coluna-tres']) { ?>
 										<?php foreach ($fields['opcoes-rodape-coluna-tres'] as $item): ?>
 											
-											<li><a href="<?= $item['opcoes-rodape-coluna-tres-link']; ?>"><strong><strong><?= $item['opcoes-rodape-coluna-tres-texto']; ?></strong></a></li>
+											<li><a href="<?= $item['opcoes-rodape-coluna-tres-link']; ?>" title="<?php _e('Opção texto', 'grancorp'); ?>"><strong><strong><?= $item['opcoes-rodape-coluna-tres-texto']; ?></strong></a></li>
 
 										<?php endforeach; ?>
 									<?php } else{} ?>
@@ -70,7 +70,7 @@
 									<?php if ($fields['opcoes-rodape-coluna-quatro']) { ?>
 										<?php foreach ($fields['opcoes-rodape-coluna-quatro'] as $item): ?>
 											
-											<li><a href="<?= $item['opcoes-rodape-coluna-quatro-link']; ?>"><strong><strong><?= $item['opcoes-rodape-coluna-quatro-texto']; ?></strong></a></li>
+											<li><a href="<?= $item['opcoes-rodape-coluna-quatro-link']; ?>" title="<?php _e('Opção texto', 'grancorp'); ?>"><strong><strong><?= $item['opcoes-rodape-coluna-quatro-texto']; ?></strong></a></li>
 
 										<?php endforeach; ?>
 									<?php } else{} ?>
@@ -81,7 +81,7 @@
 									<?php if ($fields['opcoes-rodape-coluna-cinco']) { ?>
 										<?php foreach ($fields['opcoes-rodape-coluna-cinco'] as $item): ?>
 											
-											<li><a href="<?= $item['opcoes-rodape-coluna-cinco-link']; ?>"><strong><strong><?= $item['opcoes-rodape-coluna-cinco-texto']; ?></strong></a></li>
+											<li><a href="<?= $item['opcoes-rodape-coluna-cinco-link']; ?>" title="<?php _e('Opção texto', 'grancorp'); ?>"><strong><strong><?= $item['opcoes-rodape-coluna-cinco-texto']; ?></strong></a></li>
 
 										<?php endforeach; ?>
 									<?php } else{} ?>
@@ -95,8 +95,8 @@
 							<li>
 								<p><?= $fields['opcoes-rodape-direitos']; ?></p>
 								<div class="300">
-									<a href="http://trezentos.com.br">
-										<img src="<?php echo get_template_directory_uri(); ?>/images/logo-trezentos.png" alt="trezentos">
+									<a href="http://trezentos.com.br" <?php echo (!is_home()) ? 'rel="nofollow"' : ''; ?> title="<?php _e('Trezentos', 'grancorp'); ?>" target="_blank">
+										<img src="<?php echo get_template_directory_uri(); ?>/images/logo-trezentos.png" alt="<?php _e('Trezentos'. 'grancorp'); ?>">
 									</a>
 								</div>
 							</li>

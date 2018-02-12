@@ -11,10 +11,10 @@
 			<input type="submit" name="submit" value="ENVIAR" class="wow animate fadeInRight">
 		</div>
 	</div>
-	<a href="<?= $fields['opcao-simule-link']; ?>">
+	<a href="<?= $fields['opcao-simule-link']; ?>" title="<?php _e('Simule', 'grancorp'); ?>">
 		<div class="col-md-6 simule" style="background: url('<?= $fields['opcao-simule-background']; ?>') top center no-repeat;">
 			<span class="wow animate fadeInUp"><?= $fields['opcao-simule-titulo']; ?></span>
-			<img src="<?= $fields['opcao-simule-imagem']; ?>" class="wow animate fadeInUp">
+			<img src="<?= $fields['opcao-simule-imagem']; ?>" class="wow animate fadeInUp" alt="<?php _e('Simule'. 'grancorp'); ?>">
 		</div>
 	</a>
 	<div class="clear"></div>

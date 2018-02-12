@@ -66,7 +66,7 @@
 										
 												<div class="item <?php if ($ii == 0) { echo 'active'; } ?>">
 													<header>
-														<a href="JavaScript:void(0);">
+														<a href="JavaScript:void(0);" title="<?php _e('Dúvidas', 'grancorp'); ?>">
 															<span class="title-wrapper">
 																<span><?= $item['contato-duvidas-conteudo-titulo']; ?></span>
 															</span>

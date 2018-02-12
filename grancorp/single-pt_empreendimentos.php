@@ -55,7 +55,7 @@
 	
 								<li class="wow animated fadeInUp">
 									<div class="img">
-										<img src="<?= $item['imagem']; ?>">
+										<img src="<?= $item['imagem']; ?>" alt="<?php _e('Detalhes empreendimento'. 'grancorp'); ?>">
 									</div>
 									<span class="title"><?= $item['texto']; ?></span>
 								</li>
@@ -101,7 +101,7 @@
 							<?php foreach ($campos['empreendimentos-interna-slider-um-fotos'] as $item): ?>
 		
 								<div class="slider-left">
-									<img class="img" src="<?= $item['imagem']; ?>">
+									<img class="img" src="<?= $item['imagem']; ?>" alt="<?php _e('Fachada'. 'grancorp'); ?>">
 								</div>
 
 							<?php endforeach; ?>
@@ -132,7 +132,7 @@
 								<li class="wow animated fadeInUp">
 									<hgroup data-toggle="modal" data-target="#modalLigue">
 										<div class="img">
-											<img src="<?= $item['imagem']; ?>">
+											<img src="<?= $item['imagem']; ?>" alt="<?php _e('Interessado'. 'grancorp'); ?>">
 										</div>
 										<span class="title"><?= $item['texto']; ?></span>
 									</hgroup>
@@ -187,7 +187,7 @@
 						<?php foreach ($campos['empreendimentos-interna-plantas-fotos'] as $item): ?>
 		
 							<div class="slider-right">
-								<img class="img" src="<?= $item['imagem']; ?>">
+								<img class="img" src="<?= $item['imagem']; ?>" alt="<?php _e('Planta'. 'grancorp'); ?>">
 							</div>
 
 						<?php endforeach; ?>
