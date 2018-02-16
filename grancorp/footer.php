@@ -19,6 +19,9 @@
 							<?php if ($fields['opcoes-rodape-facebook']) { ?>
 								<li><a href="<?= $fields['opcoes-rodape-facebook']; ?>" target="_blank" class="facebook-share" title="<?php _e('Facebook', 'grancorp'); ?>"><i class="fa fa-facebook"></i></a></li>
 							<?php } else {} ?>
+							<?php if (!empty($fields['opcoes-rodape-google-plus'])) { ?>
+								<li><a href="<?= $fields['opcoes-rodape-google-plus']; ?>" target="_blank" class="gplus-share" title="<?php _e('Google Plus', 'grancorp'); ?>"><i class="fa fa-google-plus"></i></a></li>
+							<?php } ?>
 							<?php if ($fields['opcoes-rodape-twitter']) { ?>
 								<li><a href="<?= $fields['opcoes-rodape-twitter']; ?>" target="_blank" class="twitter-share" title="<?php _e('Twitter', 'grancorp'); ?>"><i class="fa fa-twitter"></i></a></li>
 							<?php } else {} ?>
